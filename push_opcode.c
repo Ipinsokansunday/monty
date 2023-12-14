@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * s_push - adds a node to the stack or queue
+ * f_push - adds a node to the stack or queue
  * @stack_head: pointer to the stack head
  * @num_count: line number
  * Return: No return value
  */
-void s_push(stack_t **stack_head, unsigned int num_count)
+void f_push(stack_t **stack_head, unsigned int num_count)
 {
 	int n, index = 0, invalid_num = 0;
 

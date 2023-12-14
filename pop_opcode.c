@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * s_pop - removes the top element of the stack
+ * f_pop - removes the top element of the stack
  * @stack_head: pointer to the stack head
  * @num_count: line number
  * Return: no return
  */
-void s_pop(stack_t **stack_head, unsigned int num_count)
+void f_pop(stack_t **stack_head, unsigned int num_count)
 {
 	stack_t *p;
 
