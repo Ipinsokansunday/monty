@@ -10,8 +10,9 @@ void f_rotl(stack_t **stack_head, __attribute__((unused)) unsigned int num_count
 {
 	if (*stack_head == NULL || (*stack_head)->next == NULL)
 	{
-	return;
+		return;
 	}
+
 	stack_t *temp = *stack_head;
 	stack_t *aux = (*stack_head)->next;
 
@@ -19,8 +20,9 @@ void f_rotl(stack_t **stack_head, __attribute__((unused)) unsigned int num_count
 
 	while (temp->next != NULL)
 	{
-	temp = temp->next;
+		temp = temp->next;
 	}
+
 	temp->next = *stack_head;
 	(*stack_head)->next = NULL;
 	(*stack_head)->prev = temp;
